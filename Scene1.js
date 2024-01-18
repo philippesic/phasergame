@@ -3,10 +3,6 @@ class Scene1 extends SimpleScene {
     super("Scene1");
   }
 
-  init() {
-
-  }
-
   preload() {
 
   }
@@ -18,12 +14,15 @@ class Scene1 extends SimpleScene {
     this.circ = this.add.circle(100, 100, 20, 0x00FF00);
     // add rectangle
     this.square = this.add.rectangle(100, 200, 40, 40, 0x0000FF);
-
     //enable click on square
     this.square.enableClick();
 
+    //Emoji example 
+    this.heart = this.add.emoji(100, 300, "🔥", 20);
+
+    
     // Uncomment line below to draw the grid
-    // this.drawGrid();
+    this.drawGrid();
   }
 
   update() {
@@ -31,6 +30,7 @@ class Scene1 extends SimpleScene {
     if (this.square.wasClicked()) {
       // move circle to the right
       this.circ.x += 10;
+      this.heart.x += 5;
     }
   }
 }

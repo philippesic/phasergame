@@ -3,10 +3,6 @@ class Scene2 extends SimpleScene {
     super("Scene2");
   }
 
-  init() {
-
-  }
-
   preload() {
 
   }
