@@ -8,7 +8,7 @@ class Scene2 extends SimpleScene {
   }
 
   create() {
-
+    //test
   }
 
   update() {
